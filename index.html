@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body class="body">
+    <div class="container-fluid">
+<div class=" cen" >
+        <div class="center ">
+            <div class="screen">
+<h1 class="d-inline-block digit" id="min" > 0 </h1>
+<h1 class="d-inline-block digit" id="sec" > 0 </h1>
+<h1 class="d-inline-block digit" id="msec"> 0 </h1>
+</div>
+
+    </div>
+</div>
+
+<div class=" cen" style="background-color: aqua; border-radius:0% 0% 50% 50%;">
+<div class="center ">
+<button class="bt" onclick="start(),disable()"id="bn">Start</button>
+<button class="bt" onclick="pause(),enable()" id="bn">Pause</button>
+<button class="bt" onclick="reset(),enable()" id="bn">Reset</button>
+<button class="bt" onclick="laps()">Laps </button>
+</div>
+</div>
+
+<div id="lap" style="color: greenyellow; font-weight: 800px;">
+
+</div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
